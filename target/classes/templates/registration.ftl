@@ -3,6 +3,7 @@
 
 <@c.page>
 Add new User
-    ${message}
+    <#--${message}-->
+    ${message!"Input login and password"}
     <@l.login "/registration" />
 </@c.page>
