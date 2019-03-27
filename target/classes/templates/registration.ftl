@@ -2,8 +2,8 @@
 <#import "parts/login.ftl" as l>
 
 <@c.page>
-Add new User
+    <div class="mb-2">Add new User</div>
     <#--${message}-->
-    ${message!"Input login and password"}
-    <@l.login "/registration" />
+    ${message!}
+    <@l.login "/registration" true/>
 </@c.page>
